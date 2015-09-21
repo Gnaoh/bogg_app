@@ -1,5 +1,13 @@
-<% @creatures.each do |creature| %>
-  <h2> <%= creature.name %> </h2>
-  <p> <%= creature.description %></p>
-  <%= button_to "Delete", creature, method: :delete %>
-<% end %>
+ <section class="section-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-11">
+                        <% @creatures.each do |creature| %>
+                            <h2> <%= creature.name %> </h2>
+                             <p class="feature feature-last"><%= creature.description %></p>
+                              <%= button_to "Delete", creature, method: :delete %>
+                            <% end %>
+                        </div>
+                    </div>  <!-- row -->
+                </div>
+            </section>  <!-- section-2 -->
