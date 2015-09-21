@@ -41,11 +41,12 @@ class CreaturesController < ApplicationController
     redirect_to "/creatures/#{creature_id}"
 	end
 
-	def delete
+	def destroy
 		id = params[:id]
 		creature = Creature.find(id)
 		creature.destroy
 		redirect_to 'creatures'
+		byebug
 	end
 
 	
