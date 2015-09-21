@@ -1,4 +1,5 @@
-RouteApp::Application.routes.draw do
-  root to: 'creature#index'
-  get '/creates', to: 'creatues#index'
+Rails.application.routes.draw do
+    root to: 'creatures#index' # same as `get "/" => "creatures#index"`
+    get '/creatures', to: "creatures#index" # same as `get "/creatures" => "creatures#index"`
 end
+
