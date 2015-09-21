@@ -5,13 +5,6 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-	
-  <!-- CSS -->
-  <link rel="stylesheet" href="app/assets/stylesheets/bootstrap.min.css">
-  <link rel="stylesheet" href="app/assets/stylesheets/ionicons.min.css">
-  <link rel="stylesheet" href="app/assets/stylesheets/owl.carousel.min.css">
-  <link rel="stylesheet" href="app/assets/stylesheets/style.css">
-
    <!-- font -->
   <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet'>
   <link rel="stylesheet" href="app/assets/font/font.css">
@@ -23,7 +16,7 @@
                     <header class="site-header">
                         <div class="row">
                             <div class="col-sm-4 col-xs-8">
-                                <h3 class="logo"><a href="index.html">BOG RESEARCH INSTITUTE</a></h3>
+                                <h3 class="logo"><a href="/creatures">BOG RESEARCH INSTITUTE</a></h3>
                             </div>
                             <div class="col-sm-8 col-xs-4">
                                 <nav class="navbar pull-right" role="navigation">
@@ -35,9 +28,9 @@
                             </div>
                         </div>  <!-- row -->
                     </header>   <!-- site header -->
-									<div class="CTA text-center"> -->
+									<div class="CTA text-center">
 										<%= link_to "Add Creature", "/creatures/new", class: "btn-CTA promo-text" %>
-									</div> -->
+									</div>
 								</div>
             </section>
 <%= yield %>
@@ -47,10 +40,5 @@
                 </div>
             </footer>
         </div>  <!-- wrapper -->
-
-        <!-- js -->
-        <script src="app/assets/javascripts/jquery-2.1.3.min.js"></script>
-        <script src="app/assets/javascripts/bootstrap.min.js"></script>
-        <script src="app/assets/javascripts/owl.carousel.min.js"></script>
 </body>
 </html>
